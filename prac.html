@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracice</title>
+</head>
+<body>
+    <h1>Welcome to my page</h1>
+    <p class="para">My name Jennifer Oliseyenum</p>
+    <p class="para">I am a badass programmer</p>
+    <p class="para">Wait for it</p>
+    <button id="btn">Click to see Magic</button>
+    <p></p>
+
+
+    <script>
+       
+
+        let counter =0;
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', () =>{
+            let newH = document.getElementsByTagName('h1');
+            newH[0].textContent = "Hello People!";
+
+        let newP = document.getElementsByTagName('p');
+        newP[1].textContent = "Watch out for me!";
+
+            setTimeout(() => {
+                newP[0].textContent = "I am also Amaka";
+            }, 2000);
+            newP[2].innerHTML = "I am still here";
+            counter++;
+           // console.log("Button was clicked " + counter + " times");
+           newP[3].innerHTML = "You clicked the button " + counter + " times";
+
+        })
+
+        btn.style.background = "pink";   
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,900&display=swap');
+
+
+body{
+    background-color:hsl(188, 58%, 72%) ;
+    color: #7b113a;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site_title{
+    text-align: center;
+    color: #7b113a;
+    letter-spacing: 5px;
+
+}
+
+.card{
+    background-color: #150e56;
+    color: #8fd6e1;
+    width: 300px;
+    /* height: 350px; */
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid #7b113a;
+    margin-bottom: 40px;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 5px ;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.skill-set span{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid blanchedalmond;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+.button-wrapper{
+    text-align: center;
+   
+}
+.button-wrapper button{
+   padding: 15px 30px;
+    border-radius:20px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: blue;
+
+
+}
+.button-wrapper button:hover{
+    box-shadow: -3px 7px 5px 0px rgba(247, 249, 250, 0.75);
+-webkit-box-shadow: -3px 7px 5px 0px rgba(232, 239, 243, 0.75);
+-moz-box-shadow: -3px 7px 5px 0px rgba(242, 245, 250, 0.75);
+}
+
+#cards-holder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    justify-content: space-between;
+    padding: 20px;
+}
+form input{
+    width: 270px;
+    border:none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+form textarea{
+    width: 270px;
+    border:none;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 10px 0px;
+}
+#wrapper {
+    display: flex;
+    /* flex-direction: column; */
+}
+#wrapper aside{
+    flex-basis: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        /* display: flex; */
+        flex-direction: column;}
+    }
+    aside{
+        flex: 3;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .input-wrapper input{
+        height: 50px;
+    }
+    .input-wrapper textarea{
+        height: 140px;
+    }
+    .input-wrapper button{
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color:blue;
+        color:#7b113a
+
+    }
+    .input-wrapper button:hover{
+        color: greenyellow;
+    }
+

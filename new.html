@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo"></p>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<div id="main">
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div>
+
+<p id="para"></p> -->
+
+<!-- Use the getElementsByTagName method to find the first <p> element, and change its text to "Hello".
+
+
+    <p id="demo"></p>
+    
+    <script>
+    document.getElementsByTagName('p')[0].innerHTML
+     = "Hello";
+    </script> -->
+
+<!-- <script>
+let x = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+
+let v = document.getElementById("main");
+let y = v.getElementsByTagName("p");
+document.getElementById("para").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+</script> -->
+
+<!-- <div id="main">
+    <p class="note">This is a note!</p>
+</div>
+
+<script>
+    let note = document.querySelector('.note');
+    console.log(note.parentNode);
+</script>
+ -->
+
+ <!-- <p class="master2">i love javascript</p>
+ <p class="master2">i love react</p>
+ <h1 class="master2">i want a job</h1>
+
+ <button id="btn">click me</button> -->
+
+ <p>VsCode</p>
+ <p>Atom</p>
+ <p>Sublime text</p>
+    <button id="btn">click me</button>
+
+<script>
+
+// const btn = document.getElementById('btn')
+ 
+//  btn.addEventListener('click', () => {
+//      var master = document.getElementsByClassName("master2");
+//      master[2].innerHTML = 'I need a job';
+//      setTimeout(()=>{
+//     master[2].textContent = "I said I need a job!!!"
+// },2000);
+//  })
+
+ let btn = document.getElementById('btn');
+ let counter =0;
+ btn.addEventListener('click', () =>{
+     let newP = document.getElementsByTagName('p');
+     newP[1].textContent = "New paragraph";
+     setTimeout(() => {
+         newP[0].textContent = "This text is gotten from the paragraph below: " + newP[1].textContent;
+     }, 2000);
+    counter++;
+    console.log("Button was cliked " + counter + " times");
+   
+ })
+
+</script>
+
+</body>
+</html>

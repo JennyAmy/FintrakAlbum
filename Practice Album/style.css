@@ -1,0 +1,86 @@
+body{
+    background: greenyellow;
+}
+
+header {  
+    background-color: white; 
+    position: fixed;  
+    left: 0;  
+    right: 0;  
+    top: 10px;  
+    height: 30px;  
+    display: flex;  
+    align-items: center;  
+    
+    }  
+    header * {  
+    display: inline;  
+    }  
+    header li { 
+    /* /* text-align: center; */
+    margin: 40px;   
+    }  
+    header li a {  
+    text-decoration: none;  
+    } 
+    .wrapper{
+        /* background: rgb(45, 102, 45); */
+        margin-bottom: none;
+        margin-top: 10px;
+        display: flex;
+    }
+    .input-wrapper{
+        margin-bottom: 15px;
+    }
+    /* .text-input input{
+        width: 100%;
+        padding: 10px 3px;
+        border:none;
+        border-radius: 5px;
+    }
+    .text-input textarea{
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
+        border:none;
+        border-radius: 5px;
+    } */
+    .form-holder{
+        display: flex;
+    }
+    .card-holder{
+        display: flex;
+    flex-basis: 65%;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 50px;
+    }
+   span{
+       margin-right: 20px;
+   }
+    .card{
+        margin-top: 70px;
+        color: white;
+        font-size: large;
+
+    }
+.form-btn{
+    background: rgb(23, 199, 23);
+    color: white;
+    padding: 8px;
+    padding-left: 14px;
+    border: none;
+}
+.submit-btn{
+    padding: 7px;
+    padding-left: 15px;
+    border: none;
+    color: greenyellow;
+}
+.apply-btn{
+    padding: 7px;
+    border: thick; 
+    border: white;
+   background:  greenyellow;
+   color: white;
+}
